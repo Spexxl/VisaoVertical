@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+span{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 500;
+    color: #3A75B8;
+}
+body{
+    background-color: #E7E7E7;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-icon h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.nav-icon img{
+    width: 65px;
+}
+header nav{
+    display: flex;
+    gap: 25px;
+}
+header nav a{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.nav-suporte{
+    background-color: #0DA34E;
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px 6px 20px;
+    gap: 20px;
+}
+.nav-suporte h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+.nav-suporte img{
+    width: 30px;
+}
+
+
+
+.introduçao{
+    background-color: #E2E2E2;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 210px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.introduçao>img{
+    width: 600px;
+}
+.ps-introduçao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ps-introduçao h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 35px;
+    margin: 0;
+    font-weight: 600;
+}
+.ps-introduçao span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+}
+.ps-introduçao p{
+    font-family: "Roboto", sans-serif;
+    color: #555555;
+    font-size: 18px;
+    max-width: 400px;
+}
+.ps-introduçao > a{
+    margin-top: 10px;
+    background-color: #3A75B8;
+    display: flex;
+    max-width: 160px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px 12px 20px;
+    border-radius: 6px;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-size: 18px;
+}
+.ps-introduçao> a> img{
+    width: 20px;
+}
+
+
+
+.serviços{
+    background-color: #D9D9D9;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.serviços h2{
+    position: relative;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 6px 20px 6px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    max-width: 110px;
+}
+.serviços-boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 210px;
+    padding-top: 80px;
+}
+.serviço1, .serviço2, .serviço3{
+    background-color: #F2F2F2;
+    padding: 0px 30px 30px 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.serviço1 hr, .serviço2 hr, .serviço3 hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 0.2px;
+    opacity: 20%;
+}
+.serviço1 img, .serviço2 img, .serviço3 img{
+    width: 40px;
+}
+.serviço1-banner, .serviço2-banner, .serviço3-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serviço1-banner img, .serviço2-banner img, .serviço3-banner img{
+    width: 270px;
+    height: 200px;
+}
+.serviços-boxes >div>div>h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.serviços-boxes >div>div>p{
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 194px;
+    max-width: 300px;
+}
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 65px 50px 65px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.footer-icon img{
+    width: 65px;
+}
+.footer-conteudo>nav{
+    display: flex;
+    gap: 25px;
+}
+.footer-conteudo>nav>a{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-localizaçao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-localizaçao h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.footer-localizaçao img{
+    width: 65px;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 65px 4px 65px;
+}
+.footer-info h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 25px;
+    text-decoration: none;
+    color: #282828;
+}
+.footer-info a>img{
+    width: 35px;
+}
