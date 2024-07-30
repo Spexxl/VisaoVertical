@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,30 @@
     <link rel="stylesheet" href="./css/Home_Page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/Produtos_Serviços.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="nav-icon">
-            <img src="./assets/VisaoVertical.png"/>
+            <img src="./assets/VisaoVertical.png " alt="" />
             <h1>Visao Vertical</h1>
         </div>
         <nav>
             <a>Home</a>
-            <a>Produtos e Serviços</a>
-            <a>Orçamento</a>
+            <a href="./Produtos-e-serviços.html">Produtos e Serviços</a>
+            <a href="./orçamento.html">Orçamento</a>
             <a>Contato</a>
         </nav>
         <div class="nav-suporte">
             <h1>Suporte</h1>
-            <img src="./assets/WhatsappNav.png"/>
+            <img src="./assets/WhatsappNav.png" alt="" />
         </div>
     </header>
 
@@ -44,26 +51,32 @@
                     experientes e dedicados<span>.</span>
                 </p>
                 <div class="home-buttons">
-                    <a href="" class="orçamento">
+                    <a href="" class="orçamento ">
                         <h1>Orçamento</h1>
-                        <img src="./assets/arrow.svg">
+                        <img src="./assets/arrow.svg" alt="">
                     </a>
-                    <a href="" class="suporte">
+                    <a href="" class="suporte ">
                         <h1>Suporte</h1>
-                        <img src="./assets/arrow.svg">
+                        <img src="./assets/arrow.svg" alt="">
                     </a>
                 </div>
             </div>
+
             <div class="home-banner">
-                <img src="./assets/HomeBanner.svg" >
+                <img src="./assets/HomeBanner.svg" alt="">
             </div>
         </section>
-        
+        <a>
+            <div class="float">
+                <img src="./assets/WhatsApp4.png" alt="">
+                <p>Entrar em contato</p>
+            </div>
+        </a>
         <section class="nossos-sistemas">
             <h2>Nossos Sistemas<span>:</span></h2>
             <div class="sistemas">
-                <div class="autocom"> 
-                    <img src="./assets/autocom.png">
+                <div class="autocom">
+                    <img src="./assets/autocom.png" alt="">
                     <h1>Autocom</h1>
                     <p>O Sistema Autocom é um software local completo para áreas comerciais,
                         emitindo CFe e NFe. Fácil de usar, agiliza e
@@ -71,7 +84,7 @@
                     </p>
                 </div>
                 <div class="saipos">
-                    <img src="./assets/saipos.png">
+                    <img src="./assets/saipos.png" alt="">
                     <h1>Saipos</h1>
                     <p>
                         O Sistema Saipos é um software web para restaurantes,
@@ -87,21 +100,26 @@
             <h2>Contato<span>:</span></h2>
             <div class="contato-conteudo">
                 <div class="contato-banner">
-                    <img src="./assets/ContatoBanner.svg"/>
+                    <img src="./assets/ContatoBanner.svg" alt="" />
                 </div>
                 <div class="contato-contatos">
                     <div class="contato-numeros">
-                        <img src="./assets/TelefoneIcon.png">
+                        <img src="./assets/TelefoneIcon.png" alt="">
                         <div>
-                            <h1>(11) 95655-9737<img src="./assets/CopiarIcon.png"></h1>
-                            <h1>(11) 3705-3413<img src="/assets/CopiarIcon.png"></h1>
-                            <h1>(11) 3705-3416<img src="/assets/CopiarIcon.png"></h1>
+                            <h1>(11) 95655-9737<img src="./assets/CopiarIcon.png" alt="copie o numero"
+                                    onclick="copyToClipboard('(11) 95655-9737',this.parentNode, this)"></h1>
+                            <h1>(11) 3705-3413<img src="/assets/CopiarIcon.png" alt="copie o numero"
+                                    onclick="copyToClipboard('(11) 3705-3413',this.parentNode, this)"></h1>
+                            <h1>(11) 3705-3416<img src="/assets/CopiarIcon.png" alt="copie o numero"
+                                    onclick="copyToClipboard('(11) 3705-3416',this.parentNode, this)"></h1>
                         </div>
                     </div>
                     <div class="contato-email">
-                        <img src="./assets/EmailIcon.png">
+                        <img src="./assets/EmailIcon.png" alt="">
                         <div>
-                            <h1>atendimento@visaoshop.com.br<img src="./assets/CopiarIcon.png"></h1>
+                            <h1>atendimento@visaoshop.com.br<img src="./assets/CopiarIcon.png" alt=""
+                                    onclick="copyToClipboard('atendimento@visaoshop.com.br',this.parentNode, this)">
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -110,42 +128,46 @@
 
         <section class="localizaçao">
             <h2>Localizaçao<span>:</span></h3>
-            <div class="localizaçao-conteudo">
-                <div class="localizaçao-banner">
-                    <img src="./assets/LocalizaçaoBanner.svg"/>
-                    <p>Rua Barão de Juparanã. 30 cj 2 - Vila Zelina, São Paulo - SP, Brasil</p>
+                <div class="localizaçao-conteudo">
+                    <div class="localizaçao-banner">
+                        <img src="./assets/LocalizaçaoBanner.svg" alt=""/>
+                        <p>Rua Barão de Juparanã. 30 cj 2 - Vila Zelina, São Paulo - SP, Brasil</p>
+                    </div>
+                    <div class="localizaçao-mapa">
+                        <img src="./assets/MapaIcon.png" alt="" />
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.623317!3d-23.535417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f5bf%3A0x6eba0e2af8238f9c!2sR.+Bar%C3%A3o+de+Juparan%C3%A3%2C+30+-+Vila+Zelina%2C+S%C3%A3o+Paulo+-+SP%2C+03142-030!5e0!3m2!1spt-BR!2sbr!4v1643723404444!5m2!1spt-BR!2sbr
+                    " width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
                 </div>
-                <div class="localizaçao-mapa">
-                    <img src="./assets/MapaIcon.png"/>
-                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.623317!3d-23.535417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f5bf%3A0x6eba0e2af8238f9c!2sR.+Bar%C3%A3o+de+Juparan%C3%A3%2C+30+-+Vila+Zelina%2C+S%C3%A3o+Paulo+-+SP%2C+03142-030!5e0!3m2!1spt-BR!2sbr!4v1643723404444!5m2!1spt-BR!2sbr
-                    " width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-conteudo">
             <a class="footer-icon">
-                <img src="./assets/VisaoVertical.png"/>
+                <img src="./assets/VisaoVertical.png" alt="" />
                 <h1>Visao Vertical</h1>
             </a>
             <nav>
-                <a>Home</a>
-                <a>Produtos e Serviços</a>
-                <a>Orçamento</a>
+                <a href="./index.html">Home</a>
+                <a href="./Produtos-e-serviços.html">Produtos e Serviços</a>
+                <a href="./orçamento.html">Orçamento</a>
                 <a>Contato</a>
             </nav>
-            <a class="footer-localizaçao">
+            <a class="footer-localizaçao"
+                href="https://www.google.com/maps/place/R.+Bar%C3%A3o+de+Juparan%C3%A3,+30+-+Vila+Zelina,+S%C3%A3o+Paulo+-+SP,+03142-030/@-23.5896074,-46.5825295,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5c6c69ac812b:0x2917d4d65a8b2cfb!8m2!3d-23.5896074!4d-46.5799546!16s%2Fg%2F11c2gzv1z3?entry=ttu">
                 <h1>Localizaçao</h1>
-                <img src="./assets/LocalizaçaoFooter.png"/>
+                <img src="./assets/LocalizaçaoFooter.png" alt="" />
             </a>
         </div>
-        <hr/>
+        <hr />
         <div class="footer-info">
-            <h1>©2022  Visão Vertical informática e automação.</h1>
-            <a href="">Desenvolvido por CatalystCode<img src="./assets/CatalystCode.png"/></a>
+            <h1>©2022 Visão Vertical informática e automação.</h1>
+            <a href="catalystcode.com.br">Desenvolvido por CatalystCode<img src="./assets/CatalystCode.png" alt=""></a>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>

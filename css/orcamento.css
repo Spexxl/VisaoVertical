@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 500;
+    color: #3A75B8;
+}
+
+body {
+    background-color: #E7E7E7;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    background-color: #F6F6F6;
+}
+
+.nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav-icon img {
+    width: 65px;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav a::after {
+    content: "";
+    display: flex;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #638FC0;
+    transition: .9s;
+}
+
+header nav a:hover:after {
+    width: 100%;
+}
+
+.nav-suporte {
+    background-color: #0d9749;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: box-shadow 0.5s;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+.nav-suporte::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+.nav-suporte h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-suporte img {
+    width: 30px;
+}
+
+.nav-suporte:hover {
+    background-color: #0e8843;
+
+}
+.form-orcamento {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-group-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    margin-left: 80px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+
+.orcamento-titulo {
+    width: 500px;
+}
+
+.orcamento-titulo>h1 {
+    color: #333333;
+    font-family: "Roboto", SemiBold;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.orcamento-titulo>p {
+    color: #777777;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: "Roboto", Regular;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 30px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+.form-group-row .form-group.email-group {
+    flex: 2;
+}
+.form-group-row input {
+    padding: 10px 20px;
+    background-color: #E7E7E7;
+    border: 1px solid rgba(101, 92, 92, 24%);
+    outline: none;
+}
+
+.form-group-row .form-group input {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group>input,
+.form-group>textarea {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #E7E7E7;
+    border: 1px solid rgba(101, 92, 92, 24%);
+    outline: none;
+    border-radius: 6px;
+}
+
+.form-group>textarea {
+    min-height: 100px;
+}
+
+.form-group>label {
+    color: #333333;
+    font-family: "Roboto";
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    background-color: #3A75B8;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: .5s;
+}
+
+button[type="submit"]:hover {
+    background-color: #336699;
+}
+
+
+.form-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-logo img {
+    height: 500px;
+    width: 500px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    bottom: 0;
+}
+
+.footer-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 65px 50px 65px;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-icon img {
+    width: 65px;
+}
+
+.footer-conteudo>nav {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-conteudo>nav>a {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-conteudo>nav>a::after {
+    content: "";
+    display: flex;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #638FC0;
+    transition: .9s;
+}
+
+.footer-conteudo>nav>a:hover:after {
+    width: 100%;
+}
+
+.footer-localizaçao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-localizaçao h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-localizaçao img {
+    width: 65px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 65px 4px 65px;
+}
+
+.footer-info h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 25px;
+    text-decoration: none;
+    color: #282828;
+}
+
+.footer-info a>img {
+    width: 35px;
+}
+
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+    gap: 10px;
+}
+
+
+.float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.float img {
+    width: 40px;
+    height: auto;
+
+
+}
+
+
+.float p {
+    margin: 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    display: inline;
+}
