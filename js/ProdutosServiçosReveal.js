@@ -3,11 +3,11 @@ window.revelar = ScrollReveal({reset:true})
 //Introduçao
 revelar.reveal('.ps-introduçao',{
     duration: 1200,
-    distance: '90px'
+    distance: '60%'
 });
 revelar.reveal('.introduçao>img',{
     duration: 1200,
-    distance: '90px',
+    distance: '60%',
     delay: 300
 });
 
@@ -15,17 +15,17 @@ revelar.reveal('.introduçao>img',{
 //Serviços
 revelar.reveal('.serviço2',{
     duration: 1200,
-    distance: '500px',
+    distance: '60%',
 });
 revelar.reveal('.serviço1',{
     duration: 800,
-    distance: '200px',
+    distance: '10%',
     delay: 300,
     origin: 'left'
 });
 revelar.reveal('.serviço3',{
     duration: 800,
-    distance: '200px',
+    distance: '10%',
     delay: 600,
     origin: 'right'
 });

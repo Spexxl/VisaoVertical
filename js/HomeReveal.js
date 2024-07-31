@@ -1,13 +1,14 @@
 window.revelar = ScrollReveal({reset:true})
 
+
 //Home
 revelar.reveal('.home-apresentaçao',{
     duration: 1200,
-    distance: '90px'
+    distance: '60%'
 });
 revelar.reveal('.home-banner',{
     duration: 1200,
-    distance: '90px',
+    distance: '60%',
     delay: 200,
 });
 
@@ -15,12 +16,12 @@ revelar.reveal('.home-banner',{
 //Sistemas
 revelar.reveal('.autocom',{
     duration: 1200,
-    distance: '200px',
+    distance: '20%',
     origin: "left"
 });
 revelar.reveal('.saipos',{
     duration: 1200,
-    distance: '200px',
+    distance: '20%',
     origin: "right",
 });
 
@@ -28,20 +29,20 @@ revelar.reveal('.saipos',{
 //contatos
 revelar.reveal('.contato-conteudo',{
     duration: 1200,
-    distance: '90px',
+    distance: '60%',
 });
 revelar.reveal('.contato-contatos',{
     duration: 1200,
-    distance: '90px',
+    distance: '60%',
 });
 
 
 //localizaçao
 revelar.reveal('.localizaçao-banner',{
     duration: 1200,
-    distance: '90px',
+    distance: '60%',
 });
 revelar.reveal('.localizaçao-mapa',{
     duration: 1200,
-    distance: '90px',
+    distance: '60%',
 });

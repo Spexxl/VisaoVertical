@@ -220,16 +220,15 @@ header nav a:hover:after {
     border-radius: 6px;
     gap: 20px;
     font-family: "Roboto", sans-serif;
-    color: #fff !important;
+    color: #fff;
     text-decoration: none;
     font-size: 12px;
     position: relative;
     overflow: hidden; 
 
 }
-.home-buttons>.orçamento {
-    background-color: #3A75B8;
-    color: #fff;
+.home-buttons> .Orçamento {
+    background-color: #1c6bb1;
 }
 
 .home-buttons>.suporte {
@@ -240,7 +239,7 @@ header nav a:hover:after {
     width: 20px;
 }
 
-.home-buttons>.orçamento::before {
+.home-buttons>.Orçamento::before {
     content: "";
     position: absolute;
     top: 0;
@@ -253,7 +252,7 @@ header nav a:hover:after {
     z-index: 0;
     transition: transform 0.5s linear;
 }
-.home-buttons>.orçamento:hover::before {
+.home-buttons>.Orçamento:hover::before {
     transform: translateX(0);
 }
 .home-buttons>a>* {
@@ -645,4 +644,5 @@ footer {
 .home-apresentaçao, .home-banner, .autocom, .saipos, .contato-conteudo,
 .contato-contatos, .localizaçao-banner, .localizaçao-mapa{
     visibility: hidden;
+    max-width: 100%;
 }
