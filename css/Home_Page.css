@@ -61,6 +61,51 @@ header nav a{
 .nav-suporte img{
     width: 30px;
 }
+header nav a::after {
+    content: "";
+    display: flex;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #638FC0;
+    transition: .9s;
+}
+header nav a:hover:after {
+    width: 100%;
+}
+.nav-suporte {
+    background-color: #0d9749;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: box-shadow 0.5s;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0); /* Inicialmente sem sombra interna */
+}
+.nav-suporte::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de brilho */
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+.nav-suporte:hover {
+    background-color: #0e8843;
+}
 
 
 
@@ -161,32 +206,75 @@ header nav a{
     font-size: 18px;
     max-width: 400px;
 }
-.home-buttons{
+.home-buttons {
     display: flex;
     gap: 20px;
 }
-.home-buttons > a{
+.home-buttons>a {
     margin-top: 10px;
     display: flex;
     max-width: 160px;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px 12px 20px;
+    padding: 12px 20px;
     border-radius: 6px;
     gap: 20px;
     font-family: "Roboto", sans-serif;
-    color: white;
+    color: #fff !important;
     text-decoration: none;
     font-size: 12px;
+    position: relative;
+    overflow: hidden; 
+
 }
-.home-buttons>.orçamento{
+.home-buttons>.orçamento {
     background-color: #3A75B8;
+    color: #fff;
 }
-.home-buttons>.suporte{
+
+.home-buttons>.suporte {
     background-color: #0DA34E;
 }
-.home-buttons> a> img{
+
+.home-buttons>a>img {
     width: 20px;
+}
+
+.home-buttons>.orçamento::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #294e79; 
+    transform: translateX(-100%);
+    border-radius: 6px;
+    z-index: 0;
+    transition: transform 0.5s linear;
+}
+.home-buttons>.orçamento:hover::before {
+    transform: translateX(0);
+}
+.home-buttons>a>* {
+    position: relative;
+    z-index: 1;
+}
+.home-buttons>.suporte::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d8541; 
+    transform: translateX(-100%);
+    border-radius: 6px;
+    z-index: 0;
+    transition: transform .5s linear;
+}
+.home-buttons>.suporte:hover::before {
+    transform: translateX(0);
 }
 
 
@@ -223,6 +311,13 @@ header nav a{
     padding: 0px 30px 30px 30px;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 400ms;
+    cursor: pointer;
+    backface-visibility: hidden; 
+}
+.sistemas>div:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .sistemas>div>img{
     padding-top: 30px;
@@ -302,8 +397,9 @@ header nav a{
     font-size: 18px;
     color: #434343;
 }
-.contato-contatos>div>div>h1>img{
+.contato-contatos>div>div>h1>img {
     width: 25px;
+    cursor: pointer;
 }
 
 
@@ -362,79 +458,129 @@ header nav a{
     position: relative;
     padding-left: 10px;
 }
+.IconCheck {
+    width: 60px;
+}
 
 
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     background-color: #F5F5F5;
 }
-.footer-conteudo{
+.footer-conteudo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 65px 50px 65px;
 }
-.footer-icon{
+.footer-icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-icon h1{
+.footer-icon h1 {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 15px;
     font-weight: 700;
 }
-.footer-icon img{
+.footer-icon img {
     width: 65px;
 }
-.footer-conteudo>nav{
+.footer-conteudo>nav {
     display: flex;
     gap: 25px;
 }
-.footer-conteudo>nav>a{
+.footer-conteudo>nav>a {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
-.footer-localizaçao{
+.footer-conteudo>nav>a::after {
+    content: "";
+    display: flex;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #638FC0;
+    transition: .9s;
+}
+.footer-conteudo>nav>a:hover:after {
+    width: 100%;
+}
+.footer-localizaçao {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: #000;
 }
-.footer-localizaçao h1{
+.footer-localizaçao h1 {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 15px;
     font-weight: 700;
 }
-.footer-localizaçao img{
+.footer-localizaçao img {
     width: 65px;
 }
-.footer-info{
+.footer-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4px 65px 4px 65px;
 }
-.footer-info h1{
+.footer-info h1 {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
-.footer-info a{
+.footer-info a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    gap: 25px;
     text-decoration: none;
     color: #282828;
 }
-.footer-info a>img{
+.footer-info a>img {
     width: 35px;
+}
+
+
+
+.float {
+    position: fixed; 
+    bottom: 40px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: #25D366; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 1000; 
+    gap: 10px;
+}
+.float:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+.float img {
+    width: 40px; 
+    height: auto; 
+}
+.float p {
+    margin: 0;
+    color: white; 
+    font-family: "Roboto", sans-serif; 
+    font-size: 16px; 
+    display: inline; 
 }
 
 
@@ -457,6 +603,9 @@ footer{
     }
 }
 @media screen and (max-width: 880px) {
+    .float{
+        display: none;
+    }
     .Button-Open-Menu{
         display: block;
     }
@@ -488,4 +637,12 @@ footer{
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
+}
+
+
+
+/*Scroll Animation*/
+.home-apresentaçao, .home-banner, .autocom, .saipos, .contato-conteudo,
+.contato-contatos, .localizaçao-banner, .localizaçao-mapa{
+    visibility: hidden;
 }

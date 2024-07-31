@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/Produtos_Serviços.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/HomeReveal.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,25 +19,25 @@
             <h1>Visao Vertical</h1>
         </div>
         <nav>
-            <a>Home</a>
-            <a>Produtos e Serviços</a>
-            <a>Orçamento</a>
-            <a>Contato</a>
+            <a href="./index.html">Home</a>
+            <a href="./Produtos-e-serviços.html">Produtos e Serviços</a>
+            <a href="./orçamento.html">Orçamento</a>
+            <a href="./index.html#contato-locate">Contato</a>
         </nav>
-        <div class="nav-suporte">
+        <a href="https://web.whatsapp.com/send?phone=11956559737" target="_blank" class="nav-suporte">
             <h1>Suporte</h1>
             <img src="./assets/WhatsappNav.png"/>
-        </div>
+        </a>
         <div class="Button-Open-Menu" id="btn-menu">
             <img src="./assets/list.svg"/>
         </div>
         <div class="Menu-Mobile" id="Menu-Mobile">
             <img src="./assets/close.svg"/>
-            <a href="#Home">Home</a>
-            <a href="#Features">Produtos e Serviços</a>
-            <a href="#Faqs">Orçamento</a>
-            <a href="#Download">Contato</a>
-            <a href="#Contributes">Suporte</a>
+            <a href="./index.html">Home</a>
+            <a href="./Produtos-e-serviços.html">Produtos e Serviços</a>
+            <a href="./orçamento.html">Orçamento</a>
+            <a href="./index.html#contato-locate">Contato</a>
+            <a href="https://web.whatsapp.com/send?phone=11956559737" target="_blank">Suporte</a>
         </div>
         <div class="overlay-menu" id="overlay-menu"></div>
     </header>
@@ -56,11 +58,11 @@
                     experientes e dedicados<span>.</span>
                 </p>
                 <div class="home-buttons">
-                    <a href="" class="orçamento">
+                    <a href="./orçamento.html" class="orçamento">
                         <h1>Orçamento</h1>
                         <img src="./assets/arrow.svg">
                     </a>
-                    <a href="" class="suporte">
+                    <a href="https://web.whatsapp.com/send?phone=11956559737" target="_blank" class="suporte">
                         <h1>Suporte</h1>
                         <img src="./assets/arrow.svg">
                     </a>
@@ -70,6 +72,13 @@
                 <img src="./assets/HomeBanner.svg" >
             </div>
         </section>
+
+        <a href="https://web.whatsapp.com/send?phone=11956559737" target="_blank">
+            <div class="float">
+                <img src="./assets/WhatsApp4.png" alt="">
+                <p>Entrar em contato</p>
+            </div>
+        </a>
         
         <section class="nossos-sistemas">
             <h2>Nossos Sistemas<span>:</span></h2>
@@ -95,29 +104,33 @@
             </div>
         </section>
 
-        <section class="contato">
-            <h2>Contato<span>:</span></h2>
+        <section class="contato" >
+            <h2 id="contato-locate">Contato<span>:</span></h2>
             <div class="contato-conteudo">
                 <div class="contato-banner">
-                    <img src="./assets/ContatoBanner.svg"/>
+                    <img src="./assets/ContatoBanner.svg" alt="" />
                 </div>
-                <div class="contato-contatos">
+                <div class="contato-contatos" >
                     <div class="contato-numeros">
-                        <img src="./assets/TelefoneIcon.png">
+                        <img src="./assets/TelefoneIcon.png" alt="">
                         <div>
-                            <h1>(11) 95655-9737<img src="./assets/CopiarIcon.png"></h1>
-                            <h1>(11) 3705-3413<img src="/assets/CopiarIcon.png"></h1>
-                            <h1>(11) 3705-3416<img src="/assets/CopiarIcon.png"></h1>
+                            <h1>(11) 95655-9737<img src="./assets/CopiarIcon.png" alt="copie o numero"
+                                    onclick="copyToClipboard('(11) 95655-9737',this.parentNode, this)"></h1>
+                            <h1>(11) 3705-3413<img src="/assets/CopiarIcon.png" alt="copie o numero"
+                                    onclick="copyToClipboard('(11) 3705-3413',this.parentNode, this)"></h1>
+                            <h1>(11) 3705-3416<img src="/assets/CopiarIcon.png" alt="copie o numero"
+                                    onclick="copyToClipboard('(11) 3705-3416',this.parentNode, this)"></h1>
                         </div>
                     </div>
                     <div class="contato-email">
-                        <img src="./assets/EmailIcon.png">
+                        <img src="./assets/EmailIcon.png" alt="">
                         <div>
-                            <h1>atendimento@visaoshop.com.br<img src="./assets/CopiarIcon.png"></h1>
+                            <h1>atendimento@visaoshop.com.br<img src="./assets/CopiarIcon.png" alt=""
+                                    onclick="copyToClipboard('atendimento@visaoshop.com.br',this.parentNode, this)">
+                            </h1>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="localizaçao">
@@ -143,12 +156,12 @@
                 <h1>Visao Vertical</h1>
             </a>
             <nav>
-                <a>Home</a>
-                <a>Produtos e Serviços</a>
-                <a>Orçamento</a>
-                <a>Contato</a>
+                <a href="./index.html">Home</a>
+                <a href="./Produtos-e-serviços.html">Produtos e Serviços</a>
+                <a href="./orçamento.html">Orçamento</a>
+                <a href="./index.html#contato-locate">Contato</a>
             </nav>
-            <a class="footer-localizaçao">
+            <a class="footer-localizaçao" target="_blank" href="https://www.google.com/maps/place/R.+Bar%C3%A3o+de+Juparan%C3%A3,+30+-+Vila+Zelina,+S%C3%A3o+Paulo+-+SP,+03142-030/@-23.5896074,-46.5825295,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5c6c69ac812b:0x2917d4d65a8b2cfb!8m2!3d-23.5896074!4d-46.5799546!16s%2Fg%2F11c2gzv1z3?entry=ttu">
                 <h1>Localizaçao</h1>
                 <img src="./assets/LocalizaçaoFooter.png"/>
             </a>
@@ -156,7 +169,7 @@
         <hr/>
         <div class="footer-info">
             <h1>©2022  Visão Vertical informática e automação.</h1>
-            <a href="">Desenvolvido por CatalystCode<img src="./assets/CatalystCode.png"/></a>
+            <a href="catalystcode.com.br" target="_blank">Desenvolvido por CatalystCode<img src="./assets/CatalystCode.png"/></a>
         </div>
     </footer>
     <script src="./js/index.js"></script>
