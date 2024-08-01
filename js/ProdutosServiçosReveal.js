@@ -3,11 +3,11 @@ window.revelar = ScrollReveal({reset:true})
 //Introduçao
 revelar.reveal('.ps-introduçao',{
     duration: 1200,
-    distance: '60%'
+    distance: '40%'
 });
 revelar.reveal('.introduçao>img',{
     duration: 1200,
-    distance: '60%',
+    distance: '40%',
     delay: 300
 });
 
@@ -15,7 +15,7 @@ revelar.reveal('.introduçao>img',{
 //Serviços
 revelar.reveal('.serviço2',{
     duration: 1200,
-    distance: '60%',
+    distance: '40%',
 });
 revelar.reveal('.serviço1',{
     duration: 800,
